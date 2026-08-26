@@ -455,4 +455,38 @@ a {
   .mockup-body h3 {
     font-size: 24px;
   }
+.thankyou-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.thankyou-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.thankyou-card {
+  max-width: 720px;
+  padding: 40px;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.thankyou-card h1 {
+  margin: 18px 0 16px;
+  font-size: clamp(34px, 5vw, 52px);
+  letter-spacing: -0.04em;
+}
+
+.thankyou-card p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 17px;
 }
