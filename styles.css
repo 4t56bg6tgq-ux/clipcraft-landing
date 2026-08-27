@@ -633,4 +633,45 @@ a {
   .offer-card {
     padding: 28px;
   }
+
+.offer-hero-box {
+  margin-top: 28px;
+  padding: 28px;
+  border-radius: 26px;
+  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+  align-items: center;
+}
+
+.offer-price-side h2 {
+  margin: 8px 0 10px;
+  font-size: clamp(42px, 6vw, 58px);
+  letter-spacing: -0.05em;
+}
+
+.offer-subnote {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.7;
+}
+
+.offer-urgency {
+  padding: 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.offer-urgency p {
+  margin: 14px 0 0;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+@media (max-width: 820px) {
+  .offer-hero-box {
+    grid-template-columns: 1fr;
+  }
 }
