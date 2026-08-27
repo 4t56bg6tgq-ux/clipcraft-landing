@@ -1,13 +1,5 @@
 <!doctype html>
 <html lang="fr">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SKMSDWS56Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-SKMSDWS56Z');
-</script>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -23,6 +15,13 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="styles.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SKMSDWS56Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SKMSDWS56Z');
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -32,11 +31,11 @@
         <span>ClipCraft</span>
       </div>
       <nav class="nav">
-  <a href="#features">Fonctionnalités</a>
-  <a href="#use-cases">Cas d’usage</a>
-  <a href="/offre.html">Offre</a>
-  <a href="#faq">FAQ</a>
-</nav>
+        <a href="#features">Fonctionnalités</a>
+        <a href="#use-cases">Cas d’usage</a>
+        <a href="/offre.html">Offre</a>
+        <a href="#faq">FAQ</a>
+      </nav>
     </div>
   </header>
 
@@ -58,22 +57,26 @@
               placeholder="Entrez votre email"
               required
             />
-<input type="hidden" name="_next" value="https://clipcraft.store/merci.html" />
+            <input type="hidden" name="_next" value="https://clipcraft.store/merci.html" />
             <button type="submit">Rejoindre la waitlist</button>
           </form>
 
-         <p class="form-note">Accès anticipé réservé aux premiers inscrits. Offre founding user bientôt disponible.</p>
-<p class="offer-link-inline">
-<a
-  href="https://buy.stripe.com/eVq4gyfzS7hm0228qC8ww00"
-  class="secondary-cta"
-  target="_blank"
-  rel="noopener noreferrer"
-  onclick="trackPurchaseClick('landing_cta')"
->
-  Réserver mon accès founding user
-</a>
-</p>
+          <p class="form-note">
+            Accès anticipé réservé aux premiers inscrits. Offre founding user bientôt disponible.
+          </p>
+
+          <p class="offer-link-inline">
+            <a
+              href="https://buy.stripe.com/eVq4gyfzS7hm0228qC8ww00"
+              class="secondary-cta"
+              target="_blank"
+              rel="noopener noreferrer"
+              onclick="trackPurchaseClick('hero_cta')"
+            >
+              Réserver mon accès founding user
+            </a>
+          </p>
+
           <div class="hero-points">
             <span>Montage accéléré</span>
             <span>Sous-titres automatiques</span>
@@ -173,16 +176,17 @@
           <span class="section-kicker">Accès anticipé</span>
           <h2>Rejoignez les premiers utilisateurs de ClipCraft</h2>
         </div>
-<p class="offer-link-inline">
-  <a
-    href="https://buy.stripe.com/eVq4gyfzS7hm0228qC8ww00"
-    target="_blank"
-    rel="noopener noreferrer"
-    onclick="trackPurchaseClick('landing_inline')"
-  >
-    Réserver mon accès founding user
-  </a>
-</p>
+        <p class="offer-link-inline">
+          <a
+            href="https://buy.stripe.com/eVq4gyfzS7hm0228qC8ww00"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="trackPurchaseClick('bottom_cta')"
+          >
+            Réserver mon accès founding user
+          </a>
+        </p>
+      </div>
     </section>
 
     <section id="faq" class="faq">
@@ -215,17 +219,18 @@
       <p>© 2026 ClipCraft. Tous droits réservés.</p>
     </div>
   </footer>
-<script>
-  function trackPurchaseClick(source) {
-    if (typeof gtag === 'function') {
-      gtag('event', 'begin_checkout', {
-        currency: 'CHF',
-        value: 29,
-        source: source,
-        product_name: 'ClipCraft Founding User'
-      });
+
+  <script>
+    function trackPurchaseClick(source) {
+      if (typeof gtag === 'function') {
+        gtag('event', 'begin_checkout', {
+          currency: 'CHF',
+          value: 29,
+          source: source,
+          product_name: 'ClipCraft Founding User'
+        });
+      }
     }
-  }
-</script>
+  </script>
 </body>
 </html>
