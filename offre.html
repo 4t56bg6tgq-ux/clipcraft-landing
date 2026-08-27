@@ -75,17 +75,30 @@
         </div>
 
         <div class="offer-actions">
-          <a
-            href="https://buy.stripe.com/eVq4gyfzS7hm0228qC8ww00"
-            class="secondary-cta"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Réserver mon accès founding user
-          </a>
+<a
+  href="https://buy.stripe.com/eVq4gyfzS7hm0228qC8ww00"
+  class="secondary-cta"
+  target="_blank"
+  rel="noopener noreferrer"
+  onclick="trackPurchaseClick('offer_page_cta')"
+>
+  Réserver mon accès founding user
+</a>
         </div>
       </div>
     </div>
   </main>
+<script>
+  function trackPurchaseClick(source) {
+    if (typeof gtag === 'function') {
+      gtag('event', 'begin_checkout', {
+        currency: 'CHF',
+        value: 29,
+        source: source,
+        product_name: 'ClipCraft Founding User'
+      });
+    }
+  }
+</script>
 </body>
 </html>
