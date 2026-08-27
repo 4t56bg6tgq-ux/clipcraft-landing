@@ -490,3 +490,16 @@ a {
   line-height: 1.8;
   font-size: 17px;
 }
+
+.offer-link-inline {
+  margin-top: 10px;
+}
+
+.offer-link-inline a {
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.offer-link-inline a:hover {
+  text-decoration: underline;
+}
