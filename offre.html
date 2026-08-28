@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Offre Founding User — ClipCraft</title>
+  <title>Notre offre — ClipCraft</title>
   <meta
     name="description"
-    content="Rejoignez les premiers utilisateurs de ClipCraft avec l’offre Founding User."
+    content="Transformez votre audio en 3 clips prêts à publier pour 4,90 CHF avec ClipCraft."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,22 +27,22 @@
   <main class="offer-page">
     <div class="container offer-wrap">
       <div class="offer-card">
-        <span class="section-kicker">Offre active</span>
-        <h1>Rejoignez les premiers utilisateurs de ClipCraft</h1>
+        <span class="section-kicker">Offre disponible dès maintenant</span>
+        <h1>Transformez votre audio en clips prêts à publier</h1>
         <p class="offer-lead">
-          Une offre simple pour les early adopters qui veulent un accès prioritaire au lancement
-          et un tarif réservé aux premiers inscrits.
+          Une offre simple et sans engagement : vous payez une seule fois, vous déposez votre audio,
+          vous recevez vos clips par email.
         </p>
 
         <div class="offer-hero-box">
           <div class="offer-price-side">
-            <p class="offer-label">Offre founding user</p>
-            <h2>29 CHF</h2>
-            <p class="offer-subnote">Paiement unique · accès prioritaire · premiers inscrits avant ouverture publique</p>
+            <p class="offer-label">Traitement audio ClipCraft</p>
+            <h2>4,90 CHF</h2>
+            <p class="offer-subnote">Paiement unique · aucun abonnement · résultat en quelques minutes</p>
           </div>
           <div class="offer-urgency">
-            <span class="offer-badge">Early adopter</span>
-            <p>Cette offre est réservée aux personnes qui veulent sécuriser leur accès avant le lancement public.</p>
+            <span class="offer-badge">Sans engagement</span>
+            <p>Payez uniquement quand vous en avez besoin, fichier par fichier.</p>
           </div>
         </div>
 
@@ -50,10 +50,10 @@
           <div class="offer-item">
             <h3>Ce que vous obtenez</h3>
             <ul>
-              <li>Accès prioritaire à ClipCraft</li>
-              <li>Tarif réservé au lancement</li>
-              <li>Accès anticipé aux nouveautés</li>
-              <li>Priorité lors de l’ouverture</li>
+              <li>3 clips courts sélectionnés par IA</li>
+              <li>Un titre accrocheur généré pour chaque clip</li>
+              <li>Des liens de téléchargement envoyés par email</li>
+              <li>Un résultat en quelques minutes</li>
             </ul>
           </div>
 
@@ -70,19 +70,20 @@
 
         <div class="offer-note-box">
           <p>
-            Paiement sécurisé via Stripe. Offre limitée aux premiers utilisateurs qui souhaitent rejoindre ClipCraft avant l’ouverture publique.
+            Paiement sécurisé via Stripe. Après votre paiement, vous serez invité à déposer votre fichier
+            audio (mp3/wav) sur notre formulaire sécurisé.
           </p>
         </div>
 
         <div class="offer-actions">
 <a
-  href="https://buy.stripe.com/eVq4gyfzS7hm0228qC8ww00"
+  href="https://buy.stripe.com/7sY3cu73m9pu8yy22e8ww01"
   class="secondary-cta"
   target="_blank"
   rel="noopener noreferrer"
   onclick="trackPurchaseClick('offer_page_cta')"
 >
-  Réserver mon accès founding user
+  Traiter mon audio – 4,90 CHF
 </a>
         </div>
       </div>
@@ -93,9 +94,9 @@
     if (typeof gtag === 'function') {
       gtag('event', 'begin_checkout', {
         currency: 'CHF',
-        value: 29,
+        value: 4.90,
         source: source,
-        product_name: 'ClipCraft Founding User'
+        product_name: 'ClipCraft - Traitement audio'
       });
     }
   }
